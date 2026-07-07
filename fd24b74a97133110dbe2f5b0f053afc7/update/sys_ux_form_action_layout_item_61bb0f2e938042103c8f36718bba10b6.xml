@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action_layout_item">
+    <sys_ux_form_action_layout_item action="INSERT_OR_UPDATE">
+        <action display_value="create PDF">b061024a970cc210dbe2f5b0f053aff2</action>
+        <active>true</active>
+        <animate_icon>false</animate_icon>
+        <color>secondary</color>
+        <description/>
+        <icon/>
+        <item_type>action</item_type>
+        <label>create PDF</label>
+        <layout_group/>
+        <name>create PDF</name>
+        <order>100</order>
+        <overflow>false</overflow>
+        <sys_class_name>sys_ux_form_action_layout_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-02 13:42:32</sys_created_on>
+        <sys_id>61bb0f2e938042103c8f36718bba10b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>create PDF</sys_name>
+        <sys_package display_value="FDR" source="x_555051_fdr">fd24b74a97133110dbe2f5b0f053afc7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FDR">fd24b74a97133110dbe2f5b0f053afc7</sys_scope>
+        <sys_update_name>sys_ux_form_action_layout_item_61bb0f2e938042103c8f36718bba10b6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-02 13:42:32</sys_updated_on>
+        <table>x_555051_fdr_adw_fdr_data</table>
+    </sys_ux_form_action_layout_item>
+</record_update>

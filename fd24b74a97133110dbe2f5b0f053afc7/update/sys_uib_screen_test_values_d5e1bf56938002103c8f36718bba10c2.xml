@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
+        <macroponent/>
+        <macroponent_config>{
+    "table": "x_555051_fdr_adw_fdr_data",
+    "sysId": "cbbb031c93d802103c8f36718bba103c",
+    "query": "",
+    "extraParams": "",
+    "views": "",
+    "selectedTabIndex": "",
+    "029f04e053610110ac9bddeeff7b1294": {
+        "activityLogs": null,
+        "detailsContext": null,
+        "fields": null,
+        "forcedViewName": null,
+        "inputExtraParams": null,
+        "inputQuery": null,
+        "inputSysId": "72227b96938002103c8f36718bba106b",
+        "inputTable": "x_555051_fdr_adw_fdr_data",
+        "screen": null,
+        "selectedTabIndex": null,
+        "userPrefs": null
+    }
+}</macroponent_config>
+        <screen display_value="Default">89e1bf56938002103c8f36718bba10be</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-01 21:50:52</sys_created_on>
+        <sys_id>d5e1bf56938002103c8f36718bba10c2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="FDR" source="x_555051_fdr">fd24b74a97133110dbe2f5b0f053afc7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FDR">fd24b74a97133110dbe2f5b0f053afc7</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_d5e1bf56938002103c8f36718bba10c2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-08 00:15:47</sys_updated_on>
+    </sys_uib_screen_test_values>
+</record_update>

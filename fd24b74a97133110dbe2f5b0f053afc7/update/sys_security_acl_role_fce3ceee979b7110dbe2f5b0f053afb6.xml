@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-27 01:41:37</sys_created_on>
+        <sys_id>fce3ceee979b7110dbe2f5b0f053afb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_555051_fdr_adw_fdr_data.x_555051_fdr.adw_fdr_data_user</sys_name>
+        <sys_package display_value="FDR" source="x_555051_fdr">fd24b74a97133110dbe2f5b0f053afc7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FDR">fd24b74a97133110dbe2f5b0f053afc7</sys_scope>
+        <sys_security_acl display_value="x_555051_fdr_adw_fdr_data">70e3ceee979b7110dbe2f5b0f053afb4</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_fce3ceee979b7110dbe2f5b0f053afb6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-27 01:41:37</sys_updated_on>
+        <sys_user_role display_value="x_555051_fdr.adw_fdr_data_user" name="x_555051_fdr.adw_fdr_data_user">e4e38aae979b7110dbe2f5b0f053af12</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

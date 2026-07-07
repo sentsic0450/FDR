@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="7fefb427979b7510dbe2f5b0f053af51" sys_domain="global" table="x_555051_fdr_adw_fdr_data" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-29 23:18:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3fefb427979b7510dbe2f5b0f053afb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="Default view" name="x_555051_fdr_adw_fdr_data" sys_domain="global" view="Default view">7fefb427979b7510dbe2f5b0f053af51</sys_ui_form>
+            <sys_ui_section caption="Document Type" display_value="Document Type" name="x_555051_fdr_adw_fdr_data" sys_domain="global" view="Default view">2c039eae97db7110dbe2f5b0f053afb2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-29 23:18:39</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-29 23:34:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>36838d2b979b7510dbe2f5b0f053afe1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="Default view" name="x_555051_fdr_adw_fdr_data" sys_domain="global" view="Default view">7fefb427979b7510dbe2f5b0f053af51</sys_ui_form>
+            <sys_ui_section caption="Funding Category" display_value="Funding Category" name="x_555051_fdr_adw_fdr_data" sys_domain="global" view="Default view">2e838d2b979b7510dbe2f5b0f053af6c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-29 23:34:25</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-02-29 20:18:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5a392b1f936402103c8f36718bba1018</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="Default view" name="x_555051_fdr_adw_fdr_data" sys_domain="global" view="Default view">7fefb427979b7510dbe2f5b0f053af51</sys_ui_form>
+            <sys_ui_section caption="Operations" display_value="Operations" name="x_555051_fdr_adw_fdr_data" sys_domain="global" view="Default view">12392b1f936402103c8f36718bba1012</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-29 20:18:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-30 01:15:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a89a59a3971f7510dbe2f5b0f053afd1</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="Default view" name="x_555051_fdr_adw_fdr_data" sys_domain="global" view="Default view">7fefb427979b7510dbe2f5b0f053af51</sys_ui_form>
+            <sys_ui_section caption="Requestor Information" display_value="Requestor Information" name="x_555051_fdr_adw_fdr_data" sys_domain="global" view="Default view">509a59a3971f7510dbe2f5b0f053afce</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-29 20:18:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-30 01:18:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c75bd5e3971f7510dbe2f5b0f053af12</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="Default view" name="x_555051_fdr_adw_fdr_data" sys_domain="global" view="Default view">7fefb427979b7510dbe2f5b0f053af51</sys_ui_form>
+            <sys_ui_section caption="Purpose" display_value="Purpose" name="x_555051_fdr_adw_fdr_data" sys_domain="global" view="Default view">4b5b95e3971f7510dbe2f5b0f053afc2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-29 20:18:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-30 01:18:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4b5bd5e3971f7510dbe2f5b0f053af16</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="Default view" name="x_555051_fdr_adw_fdr_data" sys_domain="global" view="Default view">7fefb427979b7510dbe2f5b0f053af51</sys_ui_form>
+            <sys_ui_section caption="Services" display_value="Services" name="x_555051_fdr_adw_fdr_data" sys_domain="global" view="Default view">c35b95e3971f7510dbe2f5b0f053afc3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-29 20:18:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-30 01:18:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>875bd5e3971f7510dbe2f5b0f053af27</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="Default view" name="x_555051_fdr_adw_fdr_data" sys_domain="global" view="Default view">7fefb427979b7510dbe2f5b0f053af51</sys_ui_form>
+            <sys_ui_section caption="Funding Requirements" display_value="Funding Requirements" name="x_555051_fdr_adw_fdr_data" sys_domain="global" view="Default view">c75bd5e3971f7510dbe2f5b0f053af0e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-29 20:18:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-30 01:18:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>035bd5e3971f7510dbe2f5b0f053af2c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="Default view" name="x_555051_fdr_adw_fdr_data" sys_domain="global" view="Default view">7fefb427979b7510dbe2f5b0f053af51</sys_ui_form>
+            <sys_ui_section caption="Approvals/Certification of Funds" display_value="Approvals/Certification of Funds" name="x_555051_fdr_adw_fdr_data" sys_domain="global" view="Default view">435bd5e3971f7510dbe2f5b0f053af0f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-29 20:18:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-30 01:18:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8f5bd5e3971f7510dbe2f5b0f053af30</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="Default view" name="x_555051_fdr_adw_fdr_data" sys_domain="global" view="Default view">7fefb427979b7510dbe2f5b0f053af51</sys_ui_form>
+            <sys_ui_section caption="EBS Transaction Validation" display_value="EBS Transaction Validation" name="x_555051_fdr_adw_fdr_data" sys_domain="global" view="Default view">cb5bd5e3971f7510dbe2f5b0f053af0f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-02-29 20:18:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_555051_fdr_adw_fdr_data</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-29 23:18:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7fefb427979b7510dbe2f5b0f053af51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_555051_fdr_adw_fdr_data</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="FDR" source="x_555051_fdr">fd24b74a97133110dbe2f5b0f053afc7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="FDR">fd24b74a97133110dbe2f5b0f053afc7</sys_scope>
+            <sys_update_name>sys_ui_form_sections_7fefb427979b7510dbe2f5b0f053af51</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-29 23:18:39</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

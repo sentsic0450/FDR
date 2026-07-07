@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="97c30eae979b7110dbe2f5b0f053af72" label="ADW FDR" max_length="40" name="x_555051_fdr_adw_fdr_data" type="collection">
+        <element label="Amendment Original MIPR Number" max_length="100" name="amendment_original_mipr_number" type="string"/>
+        <element label="Short Description" max_length="100" name="short_description" type="string"/>
+        <element label="CONTRACT MOD" max_length="40" name="contract_mod" type="boolean"/>
+        <element label="Amendment Original PR Number" max_length="100" name="amendment_original_pr_number" type="string"/>
+        <element label="Contract Mod Newly Created FDR" max_length="32" name="contract_mod_newly_created_fdr" reference="x_555051_fdr_adw_fdr_data" type="reference"/>
+        <element label="CONTRACT BASIC" max_length="40" name="contract_basic" type="boolean"/>
+        <element label="CONTRACT BASIC_TEXT" max_length="100" name="contract_basic_text" type="string"/>
+        <element label="Appropriation Year(s)" max_length="100" name="funding_appropriation_year_s" type="string"/>
+        <element label="Type" max_length="100" name="funding_other_type" type="string"/>
+        <element label="MIPR AMENDMENT" max_length="40" name="mipr_amendment" type="boolean"/>
+        <element label="MIPR Basic Text" max_length="100" name="mipr_basic_text" type="string"/>
+        <element choice="1" label="ADW Package" max_length="32" name="parent_adw_package" reference="x_555051_fdr_adw" type="reference">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true,ignore_filter_on_new=true,ts_weight=50" default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" type="string" use_dynamic_default="true"/>
+        <element label="Capital" max_length="40" name="funding_capital" type="boolean"/>
+        <element label="O&amp;M" max_length="40" name="funding_o_m" type="boolean"/>
+        <element label="MIPR AMENDMENT TEXT" max_length="100" name="mipr_amendment_text" type="string"/>
+        <element choice="1" label="MIPR BASIC TYPE" max_length="40" name="mipr_basic_type" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Parent FDR" max_length="32" name="parent_fdr" reference="x_555051_fdr_adw_fdr_data" type="reference">
+            <choice/>
+        </element>
+        <element label="Contract Mod New PR" max_length="40" name="contract_mod_new_pr" type="boolean"/>
+        <element label="Operations" max_length="40" name="funding_operations" type="boolean"/>
+        <element label="PDW" max_length="40" name="funding_pdw" type="boolean"/>
+        <element choice="1" label="MIPR AMENDMENT TYPE" max_length="40" name="mipr_amendment_type" type="choice">
+            <choice/>
+        </element>
+        <element label="OTHER" max_length="40" name="other_document_type" type="boolean"/>
+        <element choice="1" label="Unsigned Amending FDR" max_length="32" name="unsigned_amending_fdr" reference="x_555051_fdr_adw_fdr_data" type="reference">
+            <choice/>
+        </element>
+        <element label="CONTRACT MOD TEXT" max_length="100" name="contract_mod_text" type="string"/>
+        <element label="Other" max_length="40" name="funding_other" type="boolean"/>
+        <element label="RDT&amp;E" max_length="40" name="funding_rdt_e" type="boolean"/>
+        <element label="MIPR BASIC" max_length="40" name="mipr_basic" type="boolean"/>
+        <element label="OTHER TEXT" max_length="100" name="other_text" type="string"/>
+        <index name="index">
+            <element name="contract_mod_newly_created_fdr"/>
+        </index>
+        <index name="index2">
+            <element name="parent_adw_package"/>
+        </index>
+        <index name="index3">
+            <element name="parent_fdr"/>
+        </index>
+        <index name="index4">
+            <element name="unsigned_amending_fdr"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>create_pdf</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+	// alert("1111111111111");
+    // alert(g_form.getUniqueValue());
+	var actionName = g_form.getActionName();	
+	g_form.submit(actionName);
+	g_form.save();	
+	location.reload();
+}]]></client_script_v2>
+        <comments/>
+        <condition/>
+        <form_action>false</form_action>
+        <form_button>false</form_button>
+        <form_button_icon/>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_button_icon/>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Create Pdf</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[///////////////////////////////////  Page settings   /////////////////////////////////////////////
+var v = new sn_pdfgeneratorutils.PDFGenerationAPI;
+var hfInfo = new Object();
+hfInfo["PageSize"] = "LETTER";
+hfInfo["GeneratePageNumber"] = "false";
+hfInfo["TopOrBottomMargin"] = "40";
+hfInfo["LeftOrRightMargin"] = "40";
+///////////////////////////////////////////////////////////////////
+///////////// MIPR BASIC  /////////////////////////////////////////////////////
+var mipr_basic =  (current.getValue('mipr_basic') == 1) ? "checked" : "";
+var mipr_basic_text =  current.getValue('mipr_basic_text');
+var mipr_basic_type =  current.getValue('mipr_basic_type');
+//////////////////////////////////////////////////////////////////////////////
+//////////  MIPR AMENDMENT  /////////////////////////////////////////////////
+var mipr_amendment =  current.getValue('mipr_amendment');
+var mipr_amendment_text =  current.getValue('mipr_amendment_text');
+var mipr_amendment_type =  current.getValue('mipr_amendment_type');
+//////////////////////////////////////////////////////////////////////////
+///////////////   CONTRACT BASIC    ///////////////////////////////////////
+var contract_basic =  (current.getValue('contract_basic') == "1") ? "checked" : "";
+var contract_basic_text =  current.getValue('contract_basic_text');
+///////////////////////////////////////////////////////////////////////////
+////////////////  CONTRACT MOD   /////////////////////////////////////////
+var contract_mod =  current.getValue('contract_mod');
+var contract_mod_text =  current.getValue('contract_mod_text');
+var unsigned_amending_fdr =  current.getValue('unsigned_amending_fdr');
+var contract_mod_newly_created_fdr =  current.getValue('contract_mod_newly_created_fdr');
+var contract_mod_new_pr =  current.getValue('contract_mod_new_pr');
+
+
+var amendment_original_mipr_number =  current.getValue('amendment_original_mipr_number');
+var amendment_original_pr_number =  current.getValue('amendment_original_pr_number');
+
+///////////////////////////////////////////////////////////////////////////
+////////////////  OTHER     //////////////////////////////////////////////
+var other_document_type =  current.getValue('other_document_type');
+var other_text =  current.getValue('other_text');
+////////////////////////////////////////////////////////////////////////////
+
+var funding_appropriation_year_s =  current.getValue('funding_appropriation_year_s');
+var funding_capital =  current.getValue('funding_capital');
+var funding_operations =  current.getValue('funding_operations');
+var funding_other =  current.getValue('funding_other');
+var funding_other_type =  current.getValue('funding_other_type');
+var funding_o_m =  current.getValue('funding_o_m');
+var funding_pdw =  current.getValue('funding_pdw');
+var funding_rdt_e =  current.getValue('funding_rdt_e');
+
+///////////////////////////////////////////////////////////////////////////
+var number =  current.getValue('number');
+var parent_adw_package =  current.getValue('parent_adw_package');
+var parent_fdr =  current.getValue('parent_fdr');
+var short_description =  current.getValue('short_description');
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+var filename = current.getValue('number');
+var sysid = current.getValue('sys_id');
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+var html = "<div style=\"width: 700px; height: 925px; border: 2px; border-style: solid;border-color: black; color:black;font-family: Arial, Helvetica, sans-serif;\">";
+html += "<center>";
+//////////////////////////////////   FUNDING DOCUMENT TITLE   ///////////////
+html += "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"700\">";
+html += "<tr>";
+html += "<td style=\"text-align: center;border: 0px; border-right: 1px;border-bottom: 1px;border-style: solid;border-color: gray; width: 80%;\">";
+html += "<span style=\"font-weight: bold;\">FUNDING DOCUMENT REQUEST</span><br/><span style=\"font-size: 12px;\">";
+html += "Refer to the instructions at </span><a target=\"_blank\" cursor=\"pointer\" style=\"font-size: 12px; color: blue;\">https://www.dla.mil/Forms//DLFormList/udt_95012_param_detail/286793/</a>";
+html += "</td>";
+html += "<td style=\"text-align: left; width: 20%;padding: 5px;border: 0px;border-bottom: 1px;border-style: solid;border-color: gray;\">";
+html += "<span style=\"font-size: 10px;\">Prescribed by: DLAI 7000.01<br/>Sponsor: J8</span>";
+html += "</td>";
+html += "</tr>";
+html += "</table>";
+//////////////////////////////////   DOCUMENT TYPE SECTION   ///////////////
+html += "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"700\">";
+html += "<tr style=\"background-color: #efefef;\">";
+html += "<td style=\"text-align: center;border: 0px; border-right: 1px;border-bottom: 1px;border-style: solid;border-color: gray; width: 60%;\">";
+html += "<span style=\"font-weight: bold;font-size: 12px;\">I. DOCUMENT TYPE (if Amend/MOD identify PR#)*</span><br/>";
+html += "</td>";
+html += "<td style=\"text-align: center; width: 40%;padding: 5px;border: 0px;border-bottom: 1px;border-style: solid;border-color: gray;\">";
+html += "<span style=\"font-weight: bold;font-size: 12px;\">II. FUNDING CATEGORY</span>";
+html += "</td>";
+html += "</tr>";
+html += "</table>";
+html += "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"700\">";
+html += "<tr style=\"background-color: #ffffff;\">";
+html += "<td style=\"text-align: left;border: 0px; border-right: 1px;border-color: gray; border-bottom: 1px; border-style: solid;width: 60%;font-size: 11px;vertical-align: top;\">";
+
+/////////////////////////  MIPR BASIC   ///////////////////////////////////////////
+html += "<div style=\"padding-top: 5px;padding-left: 5px;padding-bottom:5px;margin: 0px;\">";
+html += "<input type=\"checkbox\" style=\"transform: scale(1.5);\" " + mipr_basic + ">";
+html+= "&nbsp;&nbsp;&nbsp;&nbsp;MIPR BASIC:&nbsp;&nbsp;&nbsp;<input style=\"width: 100px; border: 0px;border-bottom: 1px;font-size: 10px;border-style: solid;border-color: ";
+html += "gray;\" type=\"text\"  value=\"" + mipr_basic_text + "\">";
+html += "&nbsp;&nbsp;&nbsp;&nbsp;MIPR TYPE: ";
+html += "<input style=\"width: 118px; font-size: 10px;padding: 1px;border-style: solid;border-color: gray;\" type=\"text\" value=\"" + "ZZX555" + "\" />";
+html += "</div>";
+
+//////////////////////   MIPR AMENDMENT  ////////////////////////////////////
+html += "<div style=\"padding-left: 5px;padding-bottom:5px;margin: 0px;\">";
+html += "<input type=\"checkbox\" style=\"transform: scale(1.5);\" checked>";
+html += "&nbsp;&nbsp;&nbsp;&nbsp;MIPR AMENDMENT:*:&nbsp;&nbsp;&nbsp;";
+html += "<input style=\"width: 100px; border: 0px;border-bottom: 1px;font-size: 10px;border-style: solid;border-color: gray;\" type=\"text\"  value=\"myValue\"/>";
+html += "&nbsp;&nbsp;&nbsp;&nbsp;MIPR TYPE: ";
+html += "<input style=\"width: 73px; font-size: 10px;padding: 1px;border-style: solid;border-color: gray;\" type=\"text\" value=\"" + "ABC123" + "\" />";
+html += "</div>";
+
+/////////////////////////  CONTRACT BASIC   ///////////////////////////////////////////
+html += "<div style=\"padding-top: 5px;padding-left: 5px;padding-bottom:5px;margin: 0px;\">";
+html += "<input type=\"checkbox\" style=\"transform: scale(1.5);\" " + contract_basic + ">";
+html+= "&nbsp;&nbsp;&nbsp;&nbsp;CONTRACT BASIC:&nbsp;&nbsp;&nbsp;<input style=\"width: 65%;border: 0px;border-bottom: 1px;font-size: 10px;border-style: solid;border-color: ";
+html += "gray;\" type=\"text\"  value=\"" + contract_basic_text + "\">";
+html += "</div>";
+
+html += "</td>";
+//////////////////////////////////   FUNDING CATEGORY   ///////////////
+html += "<td style=\"text-align: left; width: 40%;padding: 10px;border-left: 1px;border-bottom: 1px;border-color: gray;font-size: 12px;vertical-align: top;\">";
+html += "Operations&nbsp;&nbsp;<input type=\"checkbox\" style=\"transform: scale(1.5);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+html += "Appropriation Year(s)";
+html += "</td>";
+html += "</tr>";
+html += "</table>";
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////  REQUESTOR INFORMATION   /////////////////////////////////////////////////////
+
+html += "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"700\">";
+html += "<tr style=\"background-color: #efefef;\">";
+html += "<td style=\"text-align: center;border: 0px; border-right: 1px;border-bottom: 1px;border-style: solid;border-color: gray; width: 100%;\">";
+html += "<span style=\"font-weight: bold;font-size: 12px;\">III. REQUESTOR INFORMATION</span><br/>";
+html += "</td>";
+html += "</tr>";
+html += "</table>";
+
+
+
+////////////////////////////// FOOTER   ////////////////////////////////////////////////////
+html += "</center>";
+html += "</div>";
+html += "<span style=\"font-weight: bold;\">DLA FORM 1962, APR 2018</span>" ;
+
+
+var result = v.convertToPDFWithHeaderFooter(html, "x_555051_fdr_adw_fdr_data", sysid, filename, hfInfo);
+gs.info(JSON.stringify(result));]]></script>
+        <show_form_icon_only>false</show_form_icon_only>
+        <show_insert>false</show_insert>
+        <show_list_icon_only>false</show_list_icon_only>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-31 19:00:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4c13b9c2970cc210dbe2f5b0f053af29</sys_id>
+        <sys_mod_count>197</sys_mod_count>
+        <sys_name>Create Pdf</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="FDR" source="x_555051_fdr">fd24b74a97133110dbe2f5b0f053afc7</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FDR">fd24b74a97133110dbe2f5b0f053afc7</sys_scope>
+        <sys_update_name>sys_ui_action_4c13b9c2970cc210dbe2f5b0f053af29</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-30 00:04:50</sys_updated_on>
+        <table>x_555051_fdr_adw_fdr_data</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="parent_adw_package" label="ADW Package" language="en" table="x_555051_fdr_adw_fdr_data">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>parent_adw_package</element>
+            <help/>
+            <hint/>
+            <label>ADW Package</label>
+            <language>en</language>
+            <name>x_555051_fdr_adw_fdr_data</name>
+            <plural>ADW Packages</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-02 23:50:14</sys_created_on>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>ADW Package</sys_name>
+            <sys_package display_value="FDR" source="x_555051_fdr">fd24b74a97133110dbe2f5b0f053afc7</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="FDR">fd24b74a97133110dbe2f5b0f053afc7</sys_scope>
+            <sys_update_name>sys_documentation_x_555051_fdr_adw_fdr_data_parent_adw_package_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-03 15:07:27</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
